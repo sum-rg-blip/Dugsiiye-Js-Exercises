@@ -1,5 +1,5 @@
 let isSunny = true;
-let isWeekend = false;
+let isWeekend = true;
 console.log("Logical AND (&&) operator results:");
 console.log(isSunny && isWeekend); 
 console.log("Logical OR (||) operator results:");

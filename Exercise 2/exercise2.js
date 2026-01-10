@@ -1,0 +1,18 @@
+let a = 15;
+let b = "15";
+console.log("Equal to (==) operator results:");
+console.log(a == b);  
+console.log("Strictly equal to (===) operator results:");
+console.log(a === b); 
+console.log("Not equal to (!=) operator results:");
+console.log(a != b);  
+console.log("Strictly not equal to (!==) operator results:");
+console.log(a !== b);
+console.log("Greater than (>) operator results:"); 
+console.log(a > b); 
+console.log("Less than (<) operator results:");  
+console.log(a < b);
+console.log("Greater than or equal to (>=) operator results:");
+console.log(a >= b); 
+console.log("Less than or equal to (<=) operator results:");
+console.log(a <= b);  

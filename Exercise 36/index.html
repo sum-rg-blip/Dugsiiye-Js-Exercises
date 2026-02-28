@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 36</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Picker with Preview & History</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .row { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+
+    #previewBox {
+      width: 200px;
+      height: 120px;
+      border: 2px solid #333;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      user-select: none;
+    }
+
+    #history {
+      margin-top: 16px;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 10px;
+    }
+
+    .color-item {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      background: #fff;
+    }
+
+    .swatch {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      border: 1px solid #333;
+      flex-shrink: 0;
+    }
+
+    button {
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: 1px solid #333;
+      cursor: pointer;
+      background: #f7f7f7;
+    }
+    button:hover { background: #eee; }
+  </style>
 </head>
 <body>
-    <h1>Exercise 36</h1>
-    <script src="assignment36.js"></script>
+
+  <h2>Interactive Color Picker</h2>
+
+  <div class="row">
+    <label>
+      Pick a color:
+      <input type="color" id="colorPicker" value="#ff0000" />
+    </label>
+
+    <button id="clearBtn">Clear History</button>
+  </div>
+
+  <div style="margin-top: 16px;">
+    <div id="previewBox">#ff0000</div>
+  </div>
+
+  <h3>Color History</h3>
+  <ul id="history"></ul>
+
+  <script src="assignment36.js"></script>
 </body>
 </html>

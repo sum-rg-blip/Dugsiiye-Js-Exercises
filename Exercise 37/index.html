@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="container">
+    
+
+    <section class="card">
+      <h1>Simple Blog</h1>
+      <h2>Create a New Post</h2>
+
+      <form id="postForm" class="form">
+        <input id="titleInput" type="text" placeholder="Post Title" required />
+
+        <input id="imageInput" type="url" placeholder="Image URL (optional)" />
+
+        <textarea id="descInput" placeholder="Write your post here..." required></textarea>
+
+        <button id="submitBtn" type="submit">Add Post</button>
+
+        <!-- shows when editing -->
+        <button id="cancelEditBtn" type="button" class="btn-outline hidden">
+          Cancel Edit
+        </button>
+      </form>
+    </section>
+
+    <section class="posts">
+      <h2 class="center">All Posts</h2>
+      <div id="postsList" class="posts-list"></div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

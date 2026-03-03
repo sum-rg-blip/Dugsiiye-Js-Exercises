@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language Translator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="translator-card" aria-labelledby="translator-title">
+      <h1 id="translator-title">Language Translator</h1>
+
+      <form id="translatorForm" class="translator-form">
+        <label for="fromLang">From:</label>
+        <select id="fromLang" name="fromLang" required>
+          <option value="en" selected>English</option>
+          <option value="so">Somali</option>
+          <option value="ar">Arabic</option>
+          <option value="fr">French</option>
+          <option value="es">Spanish</option>
+          <option value="sw">Swahili</option>
+        </select>
+
+        <label for="toLang">To:</label>
+        <select id="toLang" name="toLang" required>
+          <option value="so" selected>Somali</option>
+          <option value="en">English</option>
+          <option value="ar">Arabic</option>
+          <option value="fr">French</option>
+          <option value="es">Spanish</option>
+          <option value="sw">Swahili</option>
+        </select>
+
+        <label for="inputText">Text to Translate:</label>
+        <textarea id="inputText" name="inputText" rows="5" placeholder="I am doing good" required></textarea>
+
+        <button id="translateBtn" type="submit">Translate</button>
+      </form>
+
+      <h2>Translated Text:</h2>
+      <p id="outputText" class="output">Your translation will appear here.</p>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

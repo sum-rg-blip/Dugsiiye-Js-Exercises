@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Player - Exercise 40</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="player" aria-label="Custom video player">
+      <header class="player__header">
+        <p class="eyebrow">Exercise 40</p>
+        <h1 id="videoTitle">Humood - Salamy</h1>
+      </header>
+
+      <div class="video-wrap">
+        <div id="video"></div>
+      </div>
+
+      <div class="timestamps" aria-live="polite">
+        <span id="currentTime" class="time time--current">00:00</span>
+        <span id="remainingTime" class="time time--remaining">-00:00</span>
+        <span id="duration" class="time time--total">00:00</span>
+      </div>
+
+      <input id="progress" class="progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek video" />
+
+      <div class="controls">
+        <button id="prevBtn" class="btn btn--icon" type="button" aria-label="Previous video"></button>
+        <button id="playPauseBtn" class="btn btn--play btn--icon" type="button" aria-label="Play"></button>
+        <button id="nextBtn" class="btn btn--icon" type="button" aria-label="Next video"></button>
+
+        <label class="control control--volume" for="volume">Volume</label>
+        <input id="volume" class="slider" type="range" min="0" max="100" value="80" step="1" aria-label="Volume" />
+
+        <label class="control" for="speed">Speed</label>
+        <select id="speed" class="speed" aria-label="Playback speed">
+          <option value="0.5">0.5x</option>
+          <option value="0.75">0.75x</option>
+          <option value="1" selected>1x</option>
+          <option value="1.25">1.25x</option>
+          <option value="1.5">1.5x</option>
+          <option value="2">2x</option>
+        </select>
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

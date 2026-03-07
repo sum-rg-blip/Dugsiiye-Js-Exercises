@@ -1,5 +1,19 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/html/login.html" }
+    { "source": "/", "destination": "/html/login.html" },
+
+    { "source": "/login", "destination": "/html/login.html" },
+    { "source": "/dashboard", "destination": "/html/index.html" },
+    { "source": "/clients", "destination": "/html/clients.html" },
+    { "source": "/contracts", "destination": "/html/contracts.html" },
+    { "source": "/payments", "destination": "/html/payments.html" },
+    { "source": "/reports", "destination": "/html/reports.html" },
+
+    { "source": "/login.html", "destination": "/html/login.html" },
+    { "source": "/index.html", "destination": "/html/index.html" },
+    { "source": "/clients.html", "destination": "/html/clients.html" },
+    { "source": "/contracts.html", "destination": "/html/contracts.html" },
+    { "source": "/payments.html", "destination": "/html/payments.html" },
+    { "source": "/reports.html", "destination": "/html/reports.html" }
   ]
 }
